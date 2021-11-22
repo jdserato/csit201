@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en-ph">
+<head>
+	<title>Serato's Structure HTML</title>
+	<meta charset="utf-8">
+	<meta name="author" content="Jay Vince Serato">
+	<link rel="icon" type="image/x-icon" href="img/my_icon.png">
+	<link rel="stylesheet" type="text/css" href="structure.css">
+	<style type="text/css">
+		header {
+			letter-spacing: 10px;
+			margin: 10px 25px 60px 40px;
+		}
+		mark {
+			background-color: yellow;
+			font-size: large;
+			font-style: oblique;
+			font-weight: normal;
+		}
+		a {
+			background-color: #cccccc;
+			color: #45c987;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Welcome to my site.</h1>
+	</header>
+	<nav>
+		<a href="first.html">Contact</a>&nbsp;
+		<a class="special_links" href="linebreak.html">Services</a>&nbsp;
+		<a href="../samp/samp.html">Samp</a>
+		<a id="facebook" class="special_links external_links" href="https://www.facebook.com/vynsooy"><img src="img/Facebook-logo.png" height="25" alt="Facebook"></a>
+		<a class="external_links" href="mailto:jayvince.serato@cit.edu"><img src="img/email.png" alt="Send me an Email" height="25"></a>
+	</nav>
+	<main>
+		<div>
+			<h2>Personal Information</h2>
+			<figure>
+			<!-- Thumbnail -->
+				<a href="img/large.jpg"><img src="img/small.jpg" alt="Sunset" height="250"></a>
+				<figcaption>A sunset, captured by somebody else, 2015</figcaption>
+			</figure>
+			<map name="boat" id="boat">
+				<area href="http://www.fishingdoorcounty.com" shape="rect" coords="84, 188, 350, 283" alt="Door County Fishing">
+  				<area shape="rect" coords="75, 50, 150, 250" href="https://www.twitter.com">
+  				
+</map>
+<img src="img/boat.jpg" usemap="#boat" alt="Door County"   width="416" height="350">
+
+			<p id="main_p">
+			<b>Hi</b>. I am <b>Jay Vince</b>. I am <strong id="showman">the greatest showman</strong>.
+			<br>
+			I am the 6<sup>th</sup> Hokage &amp; I believe 5 &lt; &gt;. My email is <span id="email_add">jayvince.serato&#64;cit.edu.</span></p>
+			<blockquote>&quot;<i>Carpe diem</i> - <em>Life live to the fullest</em> &quot;-<b>
+				<mark style="background-color: chocolate;word-spacing: 50px;">Mark Twain</mark></b>
+			</blockquote>
+			<div>
+				<img src="img/download.png" alt="This is an image of a computer" height="100">
+				<p>I teach the following subjects:</p>
+				<ul style="list-style-type:square">
+					<li><progress value="4" max="9">4</progress> CSIT201 Platform-based Development (Web)</li>
+					<li><progress value="5" max="8">4</progress> CSIT210 Professional Ethics and Values Education</li>
+					<li><progress value="5" max="5">4</progress> CSIT221 Data Structures and Algorithms</li>
+					<li><progress value="7" max="7">4</progress> CSIT101 Modern Tools</li>
+				</ul>
+			</div>
+			<div>
+				The following is my educational background:
+				<ol id="schools" type="1">
+					<li><meter value="75" min="0" max="200">75</meter>75 Consolacion Central School</li>
+					<li><meter value="100" min="0" max="200">100</meter>100 Consolacion National High School</li>
+					<li><meter value="200" min="0" max="200">200</meter>200 University of the Philippines Cebu</li>
+					<li><meter value="200" min="0" max="200">200</meter>200 Cebu Institute of Technology - University</li>
+				</ol>
+			</div>
+			<div>
+				Frequently Asked Questions
+				<dl>
+					<dt>Am I good?</dt>
+					<dd>Yes</dd>
+					<dt>What is my job?</dt>
+					<dd>I teach, I code.</dd>
+				</dl>
+			</div>
+		</div>
+	</main>
+	<hr>
+	<footer class="external_links">
+		<small>&copy; <i>All Rights Reserved 2021</i></small>
+	</footer>
+</body>
+</html>

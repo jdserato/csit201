@@ -1,0 +1,69 @@
+mark {
+	color: orange;
+	font-family: Ariel, sans-serif;
+	text-decoration: underline;
+}
+a {
+	text-decoration: none;
+}
+p {
+	line-height: 300%;
+	text-indent: 50px;
+	color: orange;
+}
+h2 {
+	background-image: url(img/profile.jpg);
+	background-size: 30px;
+	background-repeat: no-repeat;
+	text-shadow: 0px 0px 10px #ff99cc;
+	word-spacing: 30px;
+	border: 10px outset #ff0000;
+	border-radius: 50px 20px 150px 150px;
+	/*border-top: 5px ridge #ff00ff;*/
+	padding:  5px 10px 1px 30px;
+}
+
+body {
+	background: url(img/back.png) no-repeat;
+	/*background-image: url(img/back2.jpg);
+	background-size: 250px;
+	background-repeat: repeat-x;*/
+	margin-left: auto;
+	margin-right: auto;
+	width: 75%;
+}
+
+
+.external_links {
+	color: violet;
+	text-decoration: underline;
+}
+
+.special_links {
+	color: turquoise;
+	font-size: 1.5em;
+	font-weight: bolder;
+}
+
+#schools li, #facebook, dt {
+	color: darkgoldenrod;
+}
+
+#email_add {
+	font-size: 1.2em;
+}
+
+#showman {
+	border-top: 5px groove #ff0000;
+}
+
+figcaption {
+	font-style: italic;
+}
+
+#main_p {
+	background-image: radial-gradient(#00ffff, #ff0000);
+	box-shadow: 5px 5px 10px #00ffff;
+	opacity: 0.9;
+	color: rgba(255, 100, 25, 0.1);
+}
