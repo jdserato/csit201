@@ -20,7 +20,7 @@
 		tr:first-of-type {
 			background-color: #99C3F0;
 		}
-		tr:last-of-type {
+		tbody tr:nth-of-type(1), tbody tr:nth-of-type(2) {
 			background-color: #F877A5;
 		}
 	</style>
@@ -28,27 +28,37 @@
 <body>
 	<table border="3" bgcolor="#B8A575" style="background-color: #FFB8A5;">
 		<caption>My Family</caption>
-		<tr>
-			<td colspan="3">Contacts List</td>
-		</tr>
-		<tr>
-			<th id="name">Name</th>
-			<th id="bday">Birthday</th>
-			<th id="num">Number</th>
-		</tr>
-		<tr>
-			<td headers="name" rowspan="2">Jay Vince</td>
-			<td headers="bday" rowspan="2">04/13</td>
-			<td headers="num">09001112255</td>
-		</tr>
-		<tr>
-			<td headers="num">09594982054</td>
-		</tr>
-		<tr>
-			<td headers="name">Hannah</td>
-			<td headers="bday">04/17</td>
-			<td headers="num">09251847575</td>
-		</tr>
+		<thead>
+			<tr>
+				<th id="name">Name</th>
+				<th id="bday">Birthday</th>
+				<th id="num">Number</th>
+				<th id="hour">Hours</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td headers="name" rowspan="2">Jay Vince</td>
+				<td headers="bday" rowspan="2">04/13</td>
+				<td headers="num">09001112255</td>
+				<td headers="hour" rowspan="2">4</td>
+			</tr>
+			<tr>
+				<td headers="num">09594982054</td>
+			</tr>
+			<tr>
+				<td headers="name">Hannah</td>
+				<td headers="bday">04/17</td>
+				<td headers="num">09251847575</td>
+				<td headers="hour">5</td>
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr>
+				<td colspan="3">Total</td>
+				<td headers="hour">9</td>
+			</tr>
+		</tfoot>
 	</table>
 </body>
 </html>
