@@ -19,7 +19,6 @@
 		}
 		a {
 			background-color: #cccccc;
-			color: #45c987;
 		}
 	</style>
 </head>
@@ -27,17 +26,17 @@
 	<header>
 		<h1>Welcome to my site.</h1>
 	</header>
-	<nav>
+	<nav style="position: fixed;">
 		<a href="first.html">Contact</a>&nbsp;
-		<a class="special_links" href="linebreak.html">Services</a>&nbsp;
+		<a href="linebreak.html">Services</a>&nbsp;
 		<a href="../samp/samp.html">Samp</a>
-		<a id="facebook" class="special_links external_links" href="https://www.facebook.com/vynsooy"><img src="img/Facebook-logo.png" height="25" alt="Facebook"></a>
-		<a class="external_links" href="mailto:jayvince.serato@cit.edu"><img src="img/email.png" alt="Send me an Email" height="25"></a>
+		<a href="https://www.facebook.com/vynsooy"><img src="img/Facebook-logo.png" height="25" alt="Facebook"></a>
+		<a href="mailto:jayvince.serato@cit.edu"><img src="img/email.png" alt="Send me an Email" height="25"></a>
 	</nav>
 	<main>
 		<div>
 			<h2>Personal Information</h2>
-			<figure>
+			<figure style="display: none;">
 			<!-- Thumbnail -->
 				<a href="img/large.jpg"><img src="img/small.jpg" alt="Sunset" height="250"></a>
 				<figcaption>A sunset, captured by somebody else, 2015</figcaption>
@@ -57,16 +56,19 @@
 				<mark style="background-color: chocolate;word-spacing: 50px;">Mark Twain</mark></b>
 			</blockquote>
 			<div>
-				<img src="img/download.png" alt="This is an image of a computer" height="100">
+				<div style="overflow: auto; position: relative; left: 50px;">
+				<img src="img/download.png" alt="This is an image of a computer" height="100" style="float: left;">
+				<p style="position: absolute; left: 70px; top: 50px;">I like computers</p>
+				</div>
 				<p>I teach the following subjects:</p>
 				<ul style="list-style-type:square">
 					<li><progress value="4" max="9">4</progress> CSIT201 Platform-based Development (Web)</li>
 					<li><progress value="5" max="8">4</progress> CSIT210 Professional Ethics and Values Education</li>
-					<li><progress value="5" max="5">4</progress> CSIT221 Data Structures and Algorithms</li>
-					<li><progress value="7" max="7">4</progress> CSIT101 Modern Tools</li>
+					<li style="display: inline;"><progress value="5" min2="0" max="5">4</progress> CSIT221 Data Structures and Algorithms</li>
+					<li style="display: inline;">CSIT101 Modern Tools</li>
 				</ul>
 			</div>
-			<div>
+			<div style="border: dotted;">
 				The following is my educational background:
 				<ol id="schools" type="1">
 					<li><meter value="75" min="0" max="200">75</meter>75 Consolacion Central School</li>
@@ -76,10 +78,11 @@
 				</ol>
 			</div>
 			<div>
-				Frequently Asked Questions
-				<dl>
+				
+				<dl style="display: inline;">
+					Frequently Asked Questions
 					<dt>Am I good?</dt>
-					<dd>Yes</dd>
+					<dd style="display: inline;">Yes</dd>
 					<dt>What is my job?</dt>
 					<dd>I teach, I code.</dd>
 				</dl>
