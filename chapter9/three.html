@@ -6,8 +6,13 @@
 	<title>Exercise 2</title>
 </head>
 <body>
-	<form method="POST">
-		Email: <input type="text" name="email" value="sample@email.com" maxlength="50" required>
+	<form method="GET" action="">
+		Email: <input type="text" name="email" value="sample@email.com" maxlength="50" required><br>
+		Select your browser that you use:<br>
+		<input type="checkbox" name="br_me" id="br_me"> <label for="br_me">Microsoft Edge</label><br>
+		<input type="checkbox" name="br_gc" id="br_gc"> <label for="br_gc">Google Chrome</label><br>
+		<input type="checkbox" name="br_mf" id="br_mf"> <label for="br_mf">Mozilla Firefox</label><br>
+		<input type="checkbox" name="br_op" id="br_op"> <label for="br_op">Opera</label><br>
 		<input type="submit" name="">
 		<input type="reset" name="">
 	</form>
